@@ -1,7 +1,7 @@
 ﻿// Generate folders in our project
 
 #pragma strict
-
+import System.IO;
 
 function Start () {
 
@@ -17,5 +17,12 @@ function Update () {
 
 static function MakeFolder()
 {
-	Debug.Log("Test");
+	GenerateFolders();
+}
+
+static function GenerateFolders()
+{
+	Debug.Log("Test GenerateFolders function");
+	// CreateDirecotry is a method from MSDN
+	Directory.CreateDirectory(Application.dataPath + "/DefaultFolder");
 }
