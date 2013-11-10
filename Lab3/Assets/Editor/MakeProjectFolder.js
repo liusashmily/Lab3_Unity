@@ -13,7 +13,7 @@ function Update () {
 
 // Add menu item
 // Generate folders and names from the script
-@MenuItem("Project Tools/Make Folders")
+@MenuItem("Project Tools/Make Folders #&_g")
 
 static function MakeFolder()
 {
@@ -22,7 +22,18 @@ static function MakeFolder()
 
 static function GenerateFolders()
 {
-	Debug.Log("Test GenerateFolders function");
+	var projectPath : String = Application.dataPath + "/" ;
 	// CreateDirecotry is a method from MSDN
-	Directory.CreateDirectory(Application.dataPath + "/DefaultFolder");
+	Directory.CreateDirectory(projectPath + "Audio");
+	Directory.CreateDirectory(projectPath + "Materials");
+	Directory.CreateDirectory(projectPath + "Meshes");
+	Directory.CreateDirectory(projectPath + "Fonts");
+	Directory.CreateDirectory(projectPath + "Textures");
+	Directory.CreateDirectory(projectPath + "Resources");
+	Directory.CreateDirectory(projectPath + "Scripts");
+	Directory.CreateDirectory(projectPath + "Shaders");
+	Directory.CreateDirectory(projectPath + "Packages");
+	Directory.CreateDirectory(projectPath + "Prefabs");
+	Directory.CreateDirectory(projectPath + "Physics");
+
 }
