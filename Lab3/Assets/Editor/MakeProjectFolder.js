@@ -1,6 +1,5 @@
 ﻿// Generate folders in our project
 
-#pragma strict
 import System.IO;
 
 // Add menu item
