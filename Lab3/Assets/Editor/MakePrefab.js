@@ -10,14 +10,15 @@ static function CreatePrefab() {
 	for(var go : GameObject in selectedObjects){
 		//print(go.name);
 		var name : String = go.name;
-		var localPath : String = "Assets/" + name + ".prefab";
-		print(localPath);
+		var localPath : String = "Assets/Prefabs/" + name + ".prefab";
+		createNew(go, localPath);
 	}
-	createNew(localPath);
 }
 
-static function createNew (localPath : String) {
+static function createNew (selectedObjects : GameObject, localPath : String) {
 	var prefab : Object = PrefabUtility.CreateEmptyPrefab(localPath);
+	PrefabUtility.ReplacePrefab(selectedObjects, prefab);
+	AssetDatabase.Refresh();
 
 
 }
