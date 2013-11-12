@@ -3,14 +3,6 @@
 #pragma strict
 import System.IO;
 
-function Start () {
-
-}
-
-function Update () {
-
-}
-
 // Add menu item
 // Generate folders and names from the script
 @MenuItem("Project Tools/Make Folders #&_g")
@@ -22,7 +14,9 @@ static function MakeFolder()
 
 static function GenerateFolders()
 {
+	// Store the path for the folders
 	var projectPath : String = Application.dataPath + "/" ;
+
 	// CreateDirecotry is a method from MSDN
 	Directory.CreateDirectory(projectPath + "Audio");
 	Directory.CreateDirectory(projectPath + "Materials");
@@ -35,5 +29,7 @@ static function GenerateFolders()
 	Directory.CreateDirectory(projectPath + "Packages");
 	Directory.CreateDirectory(projectPath + "Prefabs");
 	Directory.CreateDirectory(projectPath + "Physics");
+
+	AssetDatabase.Refresh();
 
 }
