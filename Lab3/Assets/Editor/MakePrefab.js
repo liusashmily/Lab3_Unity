@@ -11,7 +11,17 @@ static function CreatePrefab() {
 		//print(go.name);
 		var name : String = go.name;
 		var localPath : String = "Assets/Prefabs/" + name + ".prefab";
-		createNew(go, localPath);
+		if(AssetDatabase.LoadAssetAtPath(localPath, GameObject))
+		{
+			if(EditorUtility.DisplayDialog("Caution", "Prefab already exits. Overwrite?", "Yes", "No")){
+				createNew(go, localPath);
+			}
+			print("Do Not Create!");
+
+		}
+		else{
+				createNew(go, localPath);
+		}
 	}
 }
 
