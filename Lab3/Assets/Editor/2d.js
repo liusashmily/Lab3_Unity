@@ -26,6 +26,14 @@ Step 2: Research
 - Words that we don't know
 
 Step 3: Instruction Manual
+1. take a texture assign to a material
+2. assign the material to a plane (gameObject)
+3. assign our script to our plane and that will provide the options in the inspector
+4. input the size of the spritesHEET, width and height
+5, input the start frame location (row and column)
+6. input the length of the animation
+7. input the speed for the animation
+
 
 Step 4: Pseudocode
 
