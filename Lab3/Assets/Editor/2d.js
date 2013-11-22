@@ -36,7 +36,25 @@ Step 3: Instruction Manual
 
 
 Step 4: Pseudocode
+need to have a constantly updated script to provide the motion for the animation
+We need to offest for the uv's sideways at a controlled speed(framers per second)
+then have the ability to "scale / zoom in " to a specific size on the poly
+space in 2 dimensions
+be able to choose frame length(clip length)
+make it a function and be able to call it up in other scripts
+
+get the offset of the uv's and move them based on time
+figure out how to find the end of the frame
+if at end, then go back to the beginning of the image
+then find the size of the frame(just one frame)
+create a way to offset the uvs based on the size of a frame and image
+render the texture to the poly at the new offset(uv) location
+render the texture to the correct size(size)
+
+variables: columSize, rowSize, framesPerSecond, rowFrameStart, colFrameStart, totalFrames,
+
 
 Step 5: Write it already
+
 
 */
