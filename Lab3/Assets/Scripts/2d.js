@@ -44,10 +44,17 @@ be able to choose frame length(clip length)
 make it a function and be able to call it up in other scripts
 
 get the offset of the uv's and move them based on time
-figure out how to find the end of the frame
+figure out how to find the end of the frame.....
 if at end, then go back to the beginning of the image
+- Note:
+		renderer.material is where we can change the offset 
+
+get column and row frame amount.....
 then find the size of the frame(just one frame)
 create a way to offset the uvs based on the size of a frame and image
+- Note:
+		Material.GetTextureOffset
+
 render the texture to the poly at the new offset(uv) location
 render the texture to the correct size(size)
 
