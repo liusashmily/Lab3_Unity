@@ -42,12 +42,15 @@ then have the ability to "scale / zoom in " to a specific size on the poly
 space in 2 dimensions
 be able to choose frame length(clip length)
 make it a function and be able to call it up in other scripts
+- Note:
+		renderer.material is where we can change the offset 
 
 get the offset of the uv's and move them based on time
 figure out how to find the end of the frame.....
 if at end, then go back to the beginning of the image
 - Note:
-		renderer.material is where we can change the offset 
+		Look up modulo, check how it works and try
+		Renderer.material is where the example is 
 
 get column and row frame amount.....
 then find the size of the frame(just one frame)

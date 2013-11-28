@@ -1,9 +1,9 @@
-﻿#pragma strict
+﻿var tileX : int;
+var tileY : int;
 
-function Start () {
+function Update(){
+	renderer.material.mainTextureOffset = Vector2 (0, 0);
 
-}
-
-function Update () {
-
+	var size = Vector2 (1.0/ tileX, 1.0 / tileY);
+	renderer.material.mainTextureScale = size;
 }
