@@ -1,4 +1,4 @@
-// Start Time
+// From load Time
 // Desc: Start Time simply start playTime at zero and stores current time
 
 var playTime		: float = 0.0;
