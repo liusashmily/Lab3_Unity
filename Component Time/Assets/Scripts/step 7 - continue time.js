@@ -9,7 +9,7 @@ var timeActive 		: boolean = true;
 
 function Update ()
 {
-	if (timeActive) {									// enable time
+	if (timeActive) {													// enable time
 		playTime = Time.time - continueTime;							// playTime is current time since start
 	}
 	
