@@ -24,6 +24,8 @@ function Update ()
 	else if (Input.GetKeyUp ("4")) {
 		Time.timeScale = 1.0;
 	}
+
+	pauseGameTime = Time.time;
 }
 
 function OnGUI () {
